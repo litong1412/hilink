@@ -1,0 +1,21 @@
+/* dark公共变量 */
+:root {
+  --backgroundForBody: #000;
+  --backgroundForItem: rgba(255, 255, 255, 0.1);
+  --backgroundForOption: #404040;
+  --backgroundForPopupBox: rgba(0, 0, 0, 0.2);
+  --backgroundForPopupNotConnected: #262626;
+  --backgroundForWarnning: #372222;
+  --fontColor: rgba(255, 255, 255, 0.86);
+  --blueColor: #3F97E9;
+  --warnningColor: #E64548;
+  --optionBottmBorderColor: rgba(255, 255, 255,0.2);
+
+  --productImg: url('../imgs/dark/seat.png');
+  --warnningIconImg: url('../imgs/dark/warnning.png');
+  --onOffBtnImg: url('../imgs/dark/loading.gif');
+  --sleepBtnImg: url('../imgs/dark/sleep-closed.png');
+  --windBtnImg: url('../imgs/dark/wind-closed.png');
+  --lightBtnImg: url('../imgs/dark/light-closed.png');
+  --volumeBtnImg: url('../imgs/dark/volume-closed.png');
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit=cover>
+  <title data-lang-en="360 Child Car Seat">360儿童安全座椅</title>
+  <!-- 切换模式 -->
+  <script>
+    window.mode = hilink.getDarkMode ? hilink. getDarkMode() - 1 : 0;
+    hilink.modifyTitleBar(!!mode, '0', '');
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = mode ? './mode/dark.css' : './mode/light.css';
+    const head = document.querySelector('head');
+    head.appendChild(link);
+  </script>
+  <!-- 样式 -->
+  <link rel="stylesheet" href="./mode/index.css">
+  <!-- 开发使用 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script> 
+  <script>eruda.init();</script>  -->
+  <!-- js -->
+  <script src="./common/getcrc.js"></script>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <div class="root">
+    <div class="headerImage">
+      <div class="topPadding"></div>
+      <div class="warnning hidden">
+        <div class="warnning-icon"></div>
+        <div class="warnning-tip" data-lang-en="Warning! Pay attention to cooling ">座椅温度较高，请注意降温!</div>
+      </div>
+      <div class="safewarn hidden">
+        <div class="warnning-icon"></div>
+        <div class="warnning-tip" data-lang-en="Warning! Pay attention to cooling ">五点式安全带卡扣未扣好，请重试!</div>
+      </div>
+      <div class="image"></div>
+    </div>
+    <div class="on-off">
+      <div class="on-off-statu bold" data-lang-en="connecting">连接中</div>
+      <div class="safeopen hidden">
+        <p class="green alreadyinstall">已安装</p>
+        <p class="green fz12">五点式安全带</p>
+      </div>
+      <div class="safeclose hidden">
+        <p class="red alreadyinstall">未安装</p>
+        <p class="red fz12">五点式安全带</p>
+      </div>
+      <div class="on-off-button"></div>
+      <div class="try-again-connect-button" data-lang-en="Reconnect">重新连接</div>
+    </div>
+
+    <div class="controllers">
+      <div class="controller controller-to-sleep">
+        <div class="controller-show">
+          <div class="controller-show_title" data-lang-en="Sleep">
+            哄睡
+          </div>
+          <div class="controller-show_tip sleep-tip"></div>
+        </div>
+        <div class="controller-button sleep-button"></div>
+      </div>
+      <div class="controller controller-to-wind">
+        <div class="controller-show">
+          <div class="controller-show_title" data-lang-en="Speed">
+            风速
+          </div>
+          <div class="controller-show_tip wind-tip"></div>
+        </div>
+        <div class="controller-button wind-button"></div>
+        <div class="controller-options wind-options">
+          <div class="controller-options_option wind-option" value="0"><div><div value="0" data-lang-en="off">关闭</div></div></div>
+          <div class="controller-options_option wind-option" value="2"><div><div value="2" data-lang-en="1st gear">1 档</div></div></div>
+          <div class="controller-options_option wind-option" value="3"><div><div value="3" data-lang-en="2nd gear">2 档</div></div></div>
+          <div class="controller-options_option wind-option" value="4"><div><div value="4" data-lang-en="3rd gear">3 档</div></div></div>
+          <div class="controller-options_option wind-option" value="1"><div><div value="1" data-lang-en="Auto">自动</div></div></div>
+        </div>
+      </div>
+      <div class="controller controller-to-light">
+        <div class="controller-show">
+          <div class="controller-show_title" data-lang-en="Light">
+            亮度
+          </div>
+          <div class="controller-show_tip light-tip"></div>
+        </div>
+        <div class="controller-button light-button"></div>
+        <div class="controller-options light-options">
+          <div class="controller-options_option light-option" value="0"><div><div value="0" data-lang-en="off">关闭</div></div></div>
+          <div class="controller-options_option light-option" value="1"><div><div value="1" data-lang-en="1st gear">1 档</div></div></div>
+          <div class="controller-options_option light-option" value="2"><div><div value="2" data-lang-en="2nd gear">2 档</div></div></div>
+          <div class="controller-options_option light-option" value="3"><div><div value="3" data-lang-en="3rd gear">3 档</div></div></div>
+        </div>
+      </div>
+      <div class="controller controller-to-volume">
+        <div class="controller-show">
+          <div class="controller-show_title" data-lang-en="Volume">
+            音量
+          </div>
+          <div class="controller-show_tip volume-tip"></div>
+        </div>
+        <div class="controller-button volume-button"></div>
+        <div class="controller-options volume-options">
+          <div class="controller-options_option volume-option" value="0"><div><div value="0" data-lang-en="off">关闭</div></div></div>
+          <div class="controller-options_option volume-option" value="1"><div><div value="1" data-lang-en="1st gear">1 档</div></div></div>
+          <div class="controller-options_option volume-option" value="2"><div><div value="2" data-lang-en="2nd gear">2 档</div></div></div>
+          <div class="controller-options_option volume-option" value="3"><div><div value="3" data-lang-en="3rd gear">3 档</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup-box">
+    <div class="popup-for-not-connected">
+      <div class="popup-for-not-connected_title" data-lang-en="Connection failed">连接失败</div>
+      <div class="popup-for-not-connected_reasons">
+        <p data-lang-en="">Try the following:</p>
+        <p data-lang-en="1.Please make sure the device is fully charged and on">1.请确认设备电量充足，并处于开启状态</p>
+        <p data-lang-en="2.Place the device close to the mobile phone to be connected (within 10 meters)">2.将设备靠近要连接的手机（10米以内）</p>
+      </div>
+      <div class="popup-for-not-connected_buttons">
+        <div class="popup-for-not-connected_buttons_later" data-lang-en="Try later">稍后再试</div>
+        <div class="popup-for-not-connected_buttons_again" data-lang-en="reconnection">立即重连</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* light公共变量 */
+:root {
+  --backgroundForBody: #F7F7F7; 
+  --backgroundForItem: #FFF;
+  --backgroundForOption: #FFF;
+  --backgroundForPopupBox: rgba(0, 0, 0, 0.2);
+  --backgroundForPopupNotConnected: #FFF;
+  --backgroundForWarnning: #FFF4F4;
+  --fontColor: rgba(0, 0, 0, 0.9);
+  --blueColor: #007DFF;
+  --warnningColor: #FB2A2D;
+  --optionBottmBorderColor: rgba(0, 0, 0, 0.2);
+
+  --productImg: url('../imgs/light/seat.png');
+  --warnningIconImg: url('../imgs/light/warnning.png');
+  --onOffBtnImg: url('../imgs/light/loading.gif');
+  --sleepBtnImg: url('../imgs/light/sleep-closed.png');
+  --windBtnImg: url('../imgs/light/wind-closed.png');
+  --lightBtnImg: url('../imgs/light/light-closed.png');
+  --volumeBtnImg: url('../imgs/light/volume-closed.png');
+}
